@@ -1,7 +1,7 @@
-#include <stdio.h>
 #include <openssl/sha.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "xorCypher.h"
 
 void shaToHex(unsigned char * hash, char* hashstr)
