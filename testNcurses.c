@@ -1,7 +1,11 @@
 #include <ncurses.h>
-
+#include <stdio.h>
+#include "network.h"
 int main()
 {
+char ip[16];
+get_ip(ip);
+
 initscr();
 if(has_colors()==false)
 {
@@ -27,6 +31,7 @@ wprintw(head,"Hello World !!!");
 short r,g,b;
 color_content(COLOR_BLACK,&r,&g,&b);
 wprintw(chat,"%d,%d,%d",r,g,b);
+wprintw(foot,ip);
 refresh();
 wrefresh(head);
 wrefresh(chat);
