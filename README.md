@@ -1,4 +1,4 @@
-# Chat-Program
+# onionchat
 ## Usage
 * ```onionchat -s``` to start as the server for a session
 * ```onionchat``` to start as a client
