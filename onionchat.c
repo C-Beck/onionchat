@@ -31,7 +31,7 @@ return 1;
 else
 {
 //too many parameters
-printf("Invalid options.\nUsage:\n    %s [-s][-h ip]\n",argv[0]);
+printf("Invalid options.\nUsage:\n    %s [-s|-h ip]\n",argv[0]);
 return 1;
 }
 }
