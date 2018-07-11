@@ -30,5 +30,11 @@ SHA512(data2,strlen(data2),hash2);
 char *hashstr2=malloc(129);
 shaToHex(hash2,hashstr2);
 strncpy(hash,hashstr2+32,64);
+free(data1);
+free(data2);
+free(hash1);
+free(hash2);
+free(hashstr1);
+free(hashstr2);
 return;
 }
