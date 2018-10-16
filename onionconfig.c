@@ -47,8 +47,6 @@ printf("Invalid response.\n");
 }
 valid=0;
 strcpy(filename,homedir);
-while(file==NULL)
-{
 while(!valid)
 {
 printf("Which file location?\n1) ~/.config/onionchat/config\n2) ~/.onionchat/config\n3) ~/.onionconfig\n");
@@ -78,12 +76,11 @@ printf("Invalid option\n");
 if((file = fopen(filename,"r+")) != NULL)
 {
 printf("File readable:%s\n",filename);
+fclose(file);
 }
 else{
 printf("File unreadable:%s\n",filename);
 }
-}
-fclose(file);
 hashPass(name,pass,hash);
 free(file);
 free(name);
