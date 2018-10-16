@@ -12,7 +12,9 @@ printf("starting client\n");
 else if(argc == 2 && strcmp(argv[1],"-s")==0)
 {
 //start server
-printf("starting server\n");
+char ip[16];
+get_ip(ip);
+printf("starting server\nServer running at %s\n",ip);
 }
 else if(argc ==3 && strcmp(argv[1],"-h")==0)
 {
