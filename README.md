@@ -17,4 +17,4 @@ Reads from ~.config/onionchat/config, ~/.onionchat/config, or ~/.onionconfig to 
 ## About
 This project started with the thought that "building a onion-routed chat system shouldn't be *that* hard." Well here we are.
 
-onionchat was built with the intention of being lighter-weight and quick*-ish*. It uses rolling keys synced by the server and the ip of the device to generate a pseudorandom key using sha-512.
+onionchat was built with the intention of being lighter-weight and quick *-ish* . It uses rolling keys synced by the server and the ip of the device to generate a pseudorandom key using sha-512.
