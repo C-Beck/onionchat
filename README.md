@@ -1,4 +1,6 @@
 # onionchat
+## About
+This project started with the thought that "building a onion-routed chat system shouldn't be that hard."
 ## Usage
 * ```onionchat -s``` to start as the server for a session
 * ```onionchat``` to start as a client
@@ -13,3 +15,4 @@ Reads from ~.config/onionchat/config, ~/.onionchat/config, or ~/.onionconfig to 
 1. head
 1. cut
 1. ncurses
+1. openssl
