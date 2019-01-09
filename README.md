@@ -17,4 +17,9 @@ Reads from ~.config/onionchat/config, ~/.onionchat/config, or ~/.onionconfig to 
 ## About
 This project started with the thought that "building a onion-routed chat system shouldn't be *that* hard." Well here we are.
 
-onionchat was built with the intention of being lighter-weight and quick *-ish* . It uses rolling keys synced by the server and the ip of the device to generate a pseudorandom key using sha-512.
+onionchat was built with the intention of being lighter-weight and quick *-ish* . It uses rolling keys synced by the server along with the ip of the device to generate
+a pseudorandom key using sha-512. This allows a unique key to be generated for each member of the network with mnimal data exchange and computation time. The rolling
+key was added to minimize valid key duration in the case of a known plaintext attack. onionchat utilizes an xor cypher as a stream cypher and as the name suggests is
+onion routed and also decentralized.
+
+The word "server" in the description of the ```-s``` flag may be misleading.
