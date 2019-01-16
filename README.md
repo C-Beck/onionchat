@@ -14,6 +14,10 @@ Reads from ~.config/onionchat/config, ~/.onionchat/config, or ~/.onionconfig to 
 1. cut
 1. ncurses
 1. openssl
+    * Minimum Version
+        1. 1.1.1a
+        1. 1.1.0j
+        1. 1.0.2q
 ## About
 This project started with the thought that "building a onion-routed chat system shouldn't be *that* hard." Well here we are.
 
