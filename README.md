@@ -22,4 +22,8 @@ a pseudorandom key using sha-512. This allows a unique key to be generated for e
 key was added to minimize valid key duration in the case of a known plaintext attack. onionchat utilizes an xor cypher as a stream cypher and as the name suggests is
 onion routed and also decentralized.
 
-The word "server" in the description of the ```-s``` flag may be misleading.
+The word "server" in the description of the ```-s``` flag may be misleading. This system does not use the traditional client-server architecture but instead nominates
+the first device acts as an organizer to syncronize the user list and rolling keys. This "server" is able to migrate througout the network as devices enter and leave
+the network.
+
+
