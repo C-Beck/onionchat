@@ -1,16 +1,41 @@
-.TH onionchat 1 "5 June 2018" "0.1"
+.TH onionchat 1 "6 Feburary 2019" "0.1"
 .SH NAME
 onionchat - chat system using randomized onion routing
+
 .SH SYNOPSIS
-onionchat [-s] [-h ip]
+.B onionchat [-s] [-h
+.I ip
+.B ]
+
 .SH DESCRIPTION
-Onionchat is a chat system that uses randomized onion routing to encrypt user communication. Onionchat can be run in a headless mode for embeded nodes to increase the security of the network.
+.B Onionchat
+is a chat system that uses randomized onion routing to encrypt user communication.
+.B Onionchat
+can be run in a headless mode for embeded nodes to increase the security of the network.
+
 .SH OPTIONS
-.IP -s
+.B -s
+.RS
 Start as server. System needs one server to initalize the user list. Acting server will migrate when current server leaves the network.
-.IP -h "ip"
-Start in headless mode. Used for embedded applications where the frontend is unneeded.
+.RE
+.BI -h " ip"
+.RS
+Start in headless mode. Used for embedded applications where the frontend is unneeded. IP is the address of the main server of the network that is being connected to.
+.RE
+
+.SH FILES
+.IR ~/.config/onionchat/config | ~/.onionchat/config | ~/.onionconfig |
+.RS
+.B onionchat
+reads from the first file available for configuration information. Expects the file to be in the format created by
+.B onionconfig
+.RE
+
 .SH BUGS
 None known at this time
+
+.SH SEE ALSO
+onionconfig(1)
+
 .SH AUTHOR
 Colton Beck
