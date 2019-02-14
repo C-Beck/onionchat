@@ -36,4 +36,6 @@ similar. This is done by retaining the two most recent keys and verifying that t
 the key changes significantly if the input is only one bit different, it is simple to check if the decrypted header is in the correct format rather than a garbled mess.
 These checks are easy to implement reusing existing functions and provide simple and effective insurance incase a message is in transit when the key is changed.
 
-
+onionconfig is an interactive editor for the configuration of onionchat that will write the configuration string in a format that onionchat is expecting. It suports
+having multiple configurations per file. However onionchat will only read from the first file from the list of ```~/.config/onionchat/config, ~/.onionchat/config, or
+~/.onionconfig```.
